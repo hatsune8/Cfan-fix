@@ -1,0 +1,356 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+li {
+ list-style: none;
+}
+
+header {
+ width: 100%;
+ height: 120px;
+ background-color: #a2a2ad;
+ display: flex;
+}
+
+.logo {
+ width: 200px;
+ height: 100px;
+ margin: 0 auto;
+ background-image: image-url("logo.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: absolute;
+ // absoluteにするとその位置に固定（スクロールで一緒に動く）、fixedにすると常に画面のその位置に固定（スクロールしても常に表示される）
+ margin-top: 10px;
+ margin-left: 15%;
+}
+
+.search-form {
+ margin: 50px auto;
+ margin-right: 80px;
+}
+
+body {
+ background-color: #dcd5c8;
+}
+.body-box {
+ min-height: 100vh;
+ position: relative;
+ padding-bottom: 50px;/*←footerの高さ*/
+ box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+main {
+ width: 100%;
+ margin: 50px auto;
+ padding: 0 auto;
+}
+
+
+.header-list {
+ margin-top: 20px;
+}
+.nav-list {
+ text-align: center;
+}
+.nav-list-item {
+ display: inline-block;
+ list-style: none;
+ margin: 0 20px;
+}
+
+.rank {
+ text-align: center;
+ border: 1px solid #1f1e63;
+ border-radius: 30px;
+ width: 80%;
+ height: 620px;
+ margin: 50px auto;
+ background-color: white;
+}
+.rank-item {
+ text-align: center;
+ width: 70%;
+ height: 200px;
+ margin: 0 auto;
+ padding-top: 15px;
+ border-bottom: 3px solid #1f1e63;
+}
+.rank-number {
+ width: 50%;
+ margin: 0 auto;
+ margin-bottom: 5px;
+}
+.rank-title {
+ border-bottom: 1px solid #1f1e63;
+ width: 80%;
+ margin: 0 auto;
+ font-size: 20px;
+ font-weight: bold;
+}
+.rank-genre {
+ border-bottom: 1px solid #1f1e63;
+ width: 50%;
+ margin: 0 auto;
+}
+
+.item-box {
+ margin: 10px 0;
+ width: 600px;
+ height: 200px;
+ border: 1px solid #1f1e63;
+ border-radius: 30px;
+ display: flex;
+ background-color: white;
+}
+
+.item-image {
+ margin: 20px;
+}
+.image_i {
+ border-radius: 10px;
+}
+
+.glyphicon-plus-sign {
+ font-size: 80px;
+ position: fixed;
+ top: 80%;
+ left: 85%;
+}
+
+.genre-list {
+ text-align: center;
+ width: 80%;
+ height: 330px;
+ border: 1px solid #1f1e63;
+ border-radius: 30px;
+ margin: 0 auto;
+ margin-top: 55px;
+ background-color: white;
+}
+
+.genre-title {
+ border-bottom: 1px solid #1f1e63;
+ margin-bottom: 20px;
+ line-height: 50px;
+ margin: 0 auto;
+}
+
+.genre {
+ margin-bottom: 20px;
+}
+
+.top {
+ height: 600px;
+ margin: 0 auto;
+ display: flex;
+ margin-top: 50px;
+}
+
+.top-text {
+ text-align: center;
+ line-height: 4;
+ margin: 0 auto;
+ color: #1f1e63;
+}
+
+.top-link {
+ background-image: image-url("logo.png");
+ width: 300px;
+ height: 150px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin: 0 auto;
+ position: absolute;
+ margin-top: 300px;
+ margin-left: 560px;
+}
+
+
+.about {
+ margin: 0 auto;
+}
+.about-text {
+ text-align: center;
+ line-height: 4;
+ margin: 0 auto;
+ color: #1f1e63;
+}
+
+.about-boxs {
+ width: 1000px;
+ height: 400px;
+ margin: 0 auto;
+ margin-top: 100px;
+ margin-bottom: 100px;
+ display: flex;
+ text-align: center;
+}
+
+.about-box {
+ width: 300px;
+ height: 400px;
+ margin-right: 50px;
+ background-color: #fff;
+ border: 5px solid #a2a2ad;
+ padding: 20px;
+ color: #1f1e63;
+}
+.about-box1 {
+ width: 300px;
+ height: 400px;
+ background-color: #fff;
+ border: 5px solid #a2a2ad;
+ padding: 20px;
+ color: #1f1e63;
+}
+.about-aicon {
+ font-size: 110px;
+ margin-top: 50px;
+ margin-bottom: 20px;
+}
+
+.about-user-text {
+ color: #1f1e63;
+ margin-top: 100px;
+ text-align: center;
+ font-weight: bold;
+}
+
+.log_in {
+ text-align: center;
+ color: #1f1e63;
+}
+.sign_up {
+ text-align: center;
+ color: #1f1e63;
+}
+.index-title {
+ color: #1f1e63;
+}
+
+.search-index-title {
+ color: #1f1e63;
+}
+
+.img_prev:hover {
+ cursor: pointer;
+ opacity: 0.7;
+ transform: scale(1.01, 1.01);
+}
+
+
+.profile {
+ margin: 0 auto;
+ text-align: center;
+}
+.profile-image {
+ border: 1px solid #1f1e63;
+}
+
+.profile-text {
+ line-height: 2;
+ width: 250px;
+ margin: 0 auto;
+ color: #1f1e63;
+}
+
+.form-btn {
+ margin-top: 100px;
+}
+
+.edit-profile-image {
+ text-align: center;
+ margin: 50px auto;
+}
+
+.edit-image {
+ text-align: center;
+ margin: 50px auto;
+ width: 100%;
+}
+
+.item-show-image {
+ text-align: center;
+ margin: 50px auto;
+ width: 100%;
+}
+.comment-list {
+ margin-bottom: 5px;
+}
+
+.withdrawal-text {
+ text-align: center;
+ color: #1f1e63;
+}
+
+.withdrawal-page-btn {
+ margin-top: 80px;
+}
+
+.withdrawal-profile {
+ margin: 0 auto;
+ margin-top: 50px;
+ padding-bottom: 30px;
+ width: 300px;
+ background-color: white;
+ padding-top: 30px;
+ border: 1px solid #1f1e63;
+ border-radius: 20px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+.withdrawal-btn {
+ text-align: center;
+ margin-top: 100px;
+}
+
+footer {
+ width: 100%;
+ height: 50px;
+ background-color: #a2a2ad;
+ text-align: center;
+ position: absolute;/*←絶対位置*/
+ bottom: 0; /*下に固定*/
+}
+
+.footer-text {
+ padding-top: 17px;
+ color: #dcd5c8;
+}
+
+
+.top-image1 {
+ background-image: image-url("ilust.jpg");
+}
+.top-image2 {
+ background-image: image-url("syousetu.jpg");
+}
+.top-image3 {
+ background-image: image-url("syasin.jpg");
+}
+.top-image4 {
+ background-image: image-url("syugei.jpg");
+}
