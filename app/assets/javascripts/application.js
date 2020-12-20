@@ -30,7 +30,8 @@ $(function () {
     }
   }
 
-  $('.img_field').change(function () {
+  $(document).on('change', '.img_field', function() {
     readURL(this);
   });
+
 });
